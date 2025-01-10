@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Suraja Baral - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <img src="photo.jpeg" alt="Your Photo">
-    <h1>Suraja Baral</h1>
+    <div class="header-content">
+        <img src="photo.jpeg" alt="Your Photo">
+        <h1>Suraja Baral</h1>
+        <p>Mobile Application Developer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/suraja-baral-369454278/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/SurajaBaral" target="_blank">GitHub</a>
+        </div>
+    </div>
 </header>
 
 <nav>
     <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.linkedin.com/in/suraja-baral-369454278/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/SurajaBaral" target="_blank">GitHub</a></li>
     </ul>
 </nav>
 
@@ -30,30 +35,35 @@
 
 <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-        <h3>Project 1: Portfolio Website</h3>
-        <p>A simple, responsive portfolio website to showcase my work.</p>
-    </div>
-    <div class="project">
-        <h3>Project 2: Quiz App</h3>
-        <p>A basic MCQ quiz application with driving license written exam questions.</p>
-    </div>
-    <div class="project">
-        <h3>Project 3: <a href="https://github.com/SurajaBaral/projectOnlineExam">OnlineExam</a></h3>
-        <p>A basic online exam website using HTML, CSS, JS, and Bootstrap framework.</p>
-    </div>
-    <div class="project">
-        <h3>Project 4: <a href="https://github.com/SurajaBaral/projectCareTech">Care Tech</a></h3>
-        <p>A basic hospital management system named CareTech.</p>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A simple, responsive portfolio website to showcase my work.</p>
+            <a href="https://github.com/SurajaBaral/Portfolio" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Quiz App</h3>
+            <p>A basic MCQ quiz application with driving license questions.</p>
+        </div>
+        <div class="project-card">
+            <h3>OnlineExam</h3>
+            <p>A basic online exam website using HTML, CSS, and JS.</p>
+            <a href="https://github.com/SurajaBaral/projectOnlineExam" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>CareTech</h3>
+            <p>A hospital management system named CareTech.</p>
+            <a href="https://github.com/SurajaBaral/projectCareTech" target="_blank">View Project</a>
+        </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <form class="contact-form">
+    <form>
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
         <button type="submit">Send Message</button>
     </form>
 </section>
